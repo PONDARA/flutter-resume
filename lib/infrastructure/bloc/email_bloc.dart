@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:aerium/infrastructure/api/email_repository.dart';
+import '../api/email_repository.dart';
 import 'package:bloc/bloc.dart';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -19,14 +19,13 @@ class EmailBloc extends Bloc<EmailEvent, EmailState> {
   EmailBloc(this._emailRepository) : super(EmailState.initial());
 
   @override
-
   @override
   Stream<EmailState> mapEventToState(
     EmailEvent event,
   ) async* {
     if (event is EmailEvent) {
       yield EmailState.sendingEmail();
-      
+
       final response = await _emailRepository.sendEmail(
         name: event.name,
         email: event.email,

@@ -1,5 +1,5 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/layout/adaptive.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 
 import 'animated_line_through_text.dart';
@@ -22,7 +22,6 @@ class NavItem extends StatefulWidget {
     required this.route,
     required this.index,
     required this.controller,
-     
     this.titleColor = AppColors.grey600,
     this.selectedColor = AppColors.black,
     this.isSelected = false,
@@ -181,7 +180,7 @@ class _NavItemState extends State<NavItem> {
       fontSize: textSize,
       color: widget.titleColor,
     );
-    
+
     return widget.isSelected
         ? AnimatedLineThroughText(
             text: widget.title,

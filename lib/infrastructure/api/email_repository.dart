@@ -1,4 +1,4 @@
-import 'package:aerium/infrastructure/failures/email_failure.dart';
+import '../failures/email_failure.dart';
 import 'package:dartz/dartz.dart';
 
 import 'email_api.dart';

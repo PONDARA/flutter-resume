@@ -1,7 +1,7 @@
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../widgets/animated_positioned_text.dart';
+import '../../../widgets/animated_text_slide_box_transition.dart';
+import '../../../widgets/spaces.dart';
+import '../../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

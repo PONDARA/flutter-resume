@@ -1,17 +1,17 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/pages/project_detail/widgets/about_project.dart';
-import 'package:aerium/presentation/pages/project_detail/widgets/next_project.dart';
-import 'package:aerium/presentation/pages/widgets/simple_footer.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/animated_wave.dart';
-import 'package:aerium/presentation/widgets/content_area.dart';
-import 'package:aerium/presentation/widgets/custom_spacer.dart';
-import 'package:aerium/presentation/widgets/empty.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/presentation/widgets/project_item.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../core/layout/adaptive.dart';
+import '../../../core/utils/functions.dart';
+import 'widgets/about_project.dart';
+import 'widgets/next_project.dart';
+import '../widgets/simple_footer.dart';
+import '../../widgets/animated_text_slide_box_transition.dart';
+import '../../widgets/animated_wave.dart';
+import '../../widgets/content_area.dart';
+import '../../widgets/custom_spacer.dart';
+import '../../widgets/empty.dart';
+import '../../widgets/page_wrapper.dart';
+import '../../widgets/project_item.dart';
+import '../../widgets/spaces.dart';
+import '../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
@@ -69,7 +69,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
         _waveController.forward();
       }
     });
-     _projectDataController = AnimationController(
+    _projectDataController = AnimationController(
       vsync: this,
       duration: Animations.slideAnimationDurationShort,
     );
@@ -113,7 +113,6 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
         assignWidth(context, 0.10),
         assignWidth(context, 0.25),
       ),
-     
     );
     double contentAreaWidth = responsiveSize(
       context,

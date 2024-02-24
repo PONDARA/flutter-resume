@@ -1,5 +1,5 @@
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'spaces.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedBubbleButton extends StatefulWidget {

@@ -1,12 +1,12 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/aerium_button.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/app_logo.dart';
-import 'package:aerium/presentation/widgets/empty.dart';
-import 'package:aerium/presentation/widgets/nav_item.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../core/layout/adaptive.dart';
+import '../../../core/utils/functions.dart';
+import '../../widgets/aerium_button.dart';
+import '../../widgets/animated_text_slide_box_transition.dart';
+import '../../widgets/app_logo.dart';
+import '../../widgets/empty.dart';
+import '../../widgets/nav_item.dart';
+import '../../widgets/spaces.dart';
+import '../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -61,7 +61,10 @@ class NavBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          AppLogo(fontSize: Sizes.TEXT_SIZE_40, titleColor: appLogoColor,),
+          AppLogo(
+            fontSize: Sizes.TEXT_SIZE_40,
+            titleColor: appLogoColor,
+          ),
           Spacer(),
           InkWell(
             onTap: onMenuTap,

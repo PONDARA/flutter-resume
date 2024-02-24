@@ -1,6 +1,6 @@
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../core/utils/functions.dart';
+import '../../widgets/spaces.dart';
+import '../../../values/values.dart';
 import 'package:flutter/material.dart';
 
 class SocialData {
@@ -39,13 +39,15 @@ class Socials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: isHorizontal ? Wrap(
-        spacing: spacing,
-        runSpacing: runSpacing,
-        children: _buildSocialIcons(socialData),
-      ) : Column(
-        children: _buildSocialIcons(socialData),
-      ),
+      child: isHorizontal
+          ? Wrap(
+              spacing: spacing,
+              runSpacing: runSpacing,
+              children: _buildSocialIcons(socialData),
+            )
+          : Column(
+              children: _buildSocialIcons(socialData),
+            ),
     );
   }
 
@@ -65,7 +67,7 @@ class Socials extends StatelessWidget {
       );
 
       // if it is vertical, add spaces
-      if(!isHorizontal) {
+      if (!isHorizontal) {
         items.add(SpaceH30());
       }
     }

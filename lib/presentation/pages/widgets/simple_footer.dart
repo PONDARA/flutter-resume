@@ -1,9 +1,9 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/pages/widgets/socials.dart';
-import 'package:aerium/presentation/widgets/animated_line_through_text.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../core/layout/adaptive.dart';
+import '../../../core/utils/functions.dart';
+import 'socials.dart';
+import '../../widgets/animated_line_through_text.dart';
+import '../../widgets/spaces.dart';
+import '../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';

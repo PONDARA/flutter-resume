@@ -1,8 +1,8 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/empty.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/layout/adaptive.dart';
+import 'animated_text_slide_box_transition.dart';
+import 'empty.dart';
+import 'spaces.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -111,11 +111,11 @@ class ContentBuilder extends StatelessWidget {
                       ),
                       SpaceW16(),
                       Expanded(
-                        child:  AnimatedTextSlideBoxTransition(
-                        controller: controller,
-                        text: section,
-                        textStyle: sectionStyle ?? defaultSectionStyle,
-                      ),
+                        child: AnimatedTextSlideBoxTransition(
+                          controller: controller,
+                          text: section,
+                          textStyle: sectionStyle ?? defaultSectionStyle,
+                        ),
                       ),
                     ],
                   ),
@@ -128,10 +128,10 @@ class ContentBuilder extends StatelessWidget {
                     children: [
                       heading ??
                           AnimatedTextSlideBoxTransition(
-                        controller: controller,
-                        text: title!,
-                        textStyle: titleStyle ?? defaultTitleStyle,
-                      ),
+                            controller: controller,
+                            text: title!,
+                            textStyle: titleStyle ?? defaultTitleStyle,
+                          ),
                       SpaceH20(),
                       body,
                       footer ?? Empty(),

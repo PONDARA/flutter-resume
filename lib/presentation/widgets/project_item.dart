@@ -1,7 +1,7 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/widgets/animated_bubble_button.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/layout/adaptive.dart';
+import 'animated_bubble_button.dart';
+import 'spaces.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 
 class ProjectItemData {
@@ -515,8 +515,6 @@ class _ProjectItemSmState extends State<ProjectItemSm>
       });
     }
   }
-
-  
 
   @override
   Widget build(BuildContext context) {

@@ -1,9 +1,9 @@
-import 'package:aerium/injection_container.dart';
+import 'injection_container.dart';
 import 'package:flutter/material.dart';
-import 'package:aerium/app_theme.dart';
-import 'package:aerium/presentation/pages/home/home_page.dart';
-import 'package:aerium/presentation/routes/routes.dart';
-import 'package:aerium/values/values.dart';
+import 'app_theme.dart';
+import 'presentation/pages/home/home_page.dart';
+import 'presentation/routes/routes.dart';
+import 'values/values.dart';
 import 'package:layout/layout.dart';
 
 import 'configure_web.dart';
@@ -14,18 +14,16 @@ import 'configure_web.dart';
 // mobile -> kotlin, android, flutter, jetpack compose,
 // web -> react, javascript
 
-
 // Certifications
 // TODO:: Add Cloud Certification from Udacity
 
 // Contact
 // TODO:: Fix email service
 
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
-   configureApp();
+  configureApp();
   runApp(Aerium());
 }
 
@@ -43,5 +41,3 @@ class Aerium extends StatelessWidget {
     );
   }
 }
-
-

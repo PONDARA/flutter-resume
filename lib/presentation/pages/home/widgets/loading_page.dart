@@ -1,8 +1,8 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/empty.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../../core/layout/adaptive.dart';
+import '../../../../core/utils/functions.dart';
+import '../../../widgets/empty.dart';
+import '../../../widgets/spaces.dart';
+import '../../../../values/values.dart';
 import 'package:flutter/material.dart';
 
 const double lineHeight = 2;
@@ -138,10 +138,9 @@ class _LoadingHomePageAnimationState extends State<LoadingHomePageAnimation>
     double screenWidth = widthOfScreen(context);
     double screenHeight = heightOfScreen(context);
     double halfHeightOfScreen = screenHeight / 2;
-    double widthOfLeftLine = assignWidth(context, 0.5) - (textWidth/2);
+    double widthOfLeftLine = assignWidth(context, 0.5) - (textWidth / 2);
     double widthOfRightLine = screenWidth - (widthOfLeftLine + textWidth);
     double leftContainerStart = (screenWidth / 2) - (textWidth / 2);
-
 
     return _isAnimationOver
         ? Empty()

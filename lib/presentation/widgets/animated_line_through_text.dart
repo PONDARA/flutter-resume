@@ -1,6 +1,6 @@
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/empty.dart';
-import 'package:aerium/values/values.dart';
+import 'animated_text_slide_box_transition.dart';
+import 'empty.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedLineThroughText extends StatefulWidget {
@@ -13,10 +13,11 @@ class AnimatedLineThroughText extends StatefulWidget {
     this.lineThickness = 2,
     this.hoverColor = AppColors.black,
     this.coverColor = AppColors.primaryColor,
-    this.slideBoxColor = AppColors.black, this.slideBoxCoverColor = AppColors.primaryColor,
+    this.slideBoxColor = AppColors.black,
+    this.slideBoxCoverColor = AppColors.primaryColor,
     this.onTap,
-    this.heightFactor= 1,
-    this.widthFactor= 1,
+    this.heightFactor = 1,
+    this.widthFactor = 1,
     this.maxLines = 1,
     this.width = double.infinity,
     this.isUnderlinedOnHover = true,

@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:aerium/infrastructure/failures/email_failure.dart';
+import '../failures/email_failure.dart';
 import 'package:http/http.dart' as http;
-import 'package:aerium/values/values.dart';
+import '../../values/values.dart';
 
 import 'email_model.dart';
 
@@ -30,7 +30,6 @@ class EmailApiImpl implements EmailApi {
     try {
       final response = await client.post(
         Uri.parse(StringConst.BASE_URL + StringConst.GET_IN_TOUCH_POINT),
-       
         body: jsonEncode({
           "name": name,
           "email": email,
@@ -39,7 +38,6 @@ class EmailApiImpl implements EmailApi {
         }),
       );
 
-    
       if (response.statusCode == 200) {
         return Email(status: "success");
       } else {

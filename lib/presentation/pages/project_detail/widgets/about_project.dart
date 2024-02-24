@@ -1,13 +1,13 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/animated_bubble_button.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_widget.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/empty.dart';
-import 'package:aerium/presentation/widgets/project_item.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../../core/layout/adaptive.dart';
+import '../../../../core/utils/functions.dart';
+import '../../../widgets/animated_bubble_button.dart';
+import '../../../widgets/animated_positioned_text.dart';
+import '../../../widgets/animated_positioned_widget.dart';
+import '../../../widgets/animated_text_slide_box_transition.dart';
+import '../../../widgets/empty.dart';
+import '../../../widgets/project_item.dart';
+import '../../../widgets/spaces.dart';
+import '../../../../values/values.dart';
 import 'package:flutter/material.dart';
 
 List<String> titles = [
@@ -158,14 +158,14 @@ class _AboutprojectState extends State<Aboutproject> {
                         parent: widget.projectDataController,
                         curve: Animations.textSlideInCurve,
                       ),
-                       width: targetWidth,
+                      width: targetWidth,
                       height: initialWidth,
                       child: AnimatedBubbleButton(
                         title: StringConst.LAUNCH_APP,
                         color: AppColors.grey100,
                         imageColor: AppColors.black,
                         startBorderRadius: borderRadius,
-                          startWidth: initialWidth,
+                        startWidth: initialWidth,
                         height: initialWidth,
                         targetWidth: targetWidth,
                         titleStyle: buttonStyle,

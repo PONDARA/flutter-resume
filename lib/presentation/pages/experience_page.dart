@@ -1,14 +1,14 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/pages/widgets/animated_footer.dart';
-import 'package:aerium/presentation/pages/widgets/page_header.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/content_area.dart';
-import 'package:aerium/presentation/widgets/content_builder.dart';
-import 'package:aerium/presentation/widgets/custom_spacer.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/layout/adaptive.dart';
+import 'widgets/animated_footer.dart';
+import 'widgets/page_header.dart';
+import '../widgets/animated_positioned_text.dart';
+import '../widgets/animated_text_slide_box_transition.dart';
+import '../widgets/content_area.dart';
+import '../widgets/content_builder.dart';
+import '../widgets/custom_spacer.dart';
+import '../widgets/page_wrapper.dart';
+import '../widgets/spaces.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 

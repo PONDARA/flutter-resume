@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+import 'values/values.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {

@@ -1,10 +1,10 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/pages/widgets/simple_footer.dart';
-import 'package:aerium/presentation/widgets/animated_bubble_button.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_widget.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../core/layout/adaptive.dart';
+import 'simple_footer.dart';
+import '../../widgets/animated_bubble_button.dart';
+import '../../widgets/animated_positioned_text.dart';
+import '../../widgets/animated_positioned_widget.dart';
+import '../../widgets/spaces.dart';
+import '../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
@@ -112,7 +112,6 @@ class _AnimatedFooterState extends State<AnimatedFooter>
                   Center(
                     child: AnimatedPositionedText(
                       text: StringConst.WORK_TOGETHER,
-                     
                       textAlign: TextAlign.center,
                       textStyle: titleStyle,
                       controller: CurvedAnimation(

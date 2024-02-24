@@ -1,12 +1,12 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/pages/widgets/animated_footer.dart';
-import 'package:aerium/presentation/pages/works/widgets/noteworthy_projects.dart';
-import 'package:aerium/presentation/pages/widgets/page_header.dart';
-import 'package:aerium/presentation/widgets/custom_spacer.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/presentation/widgets/project_item.dart';
-import 'package:aerium/values/values.dart';
+import '../../../core/layout/adaptive.dart';
+import '../../../core/utils/functions.dart';
+import '../widgets/animated_footer.dart';
+import 'widgets/noteworthy_projects.dart';
+import '../widgets/page_header.dart';
+import '../../widgets/custom_spacer.dart';
+import '../../widgets/page_wrapper.dart';
+import '../../widgets/project_item.dart';
+import '../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -126,9 +126,8 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
   }) {
     List<Widget> items = [];
     int margin = subHeight * (data.length - 1);
-    
+
     for (int index = data.length - 1; index >= 0; index--) {
-      
       items.add(
         Container(
           margin: EdgeInsets.only(top: margin.toDouble()),
@@ -142,7 +141,7 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,
             onTap: () {
-             Functions.navigateToProject(
+              Functions.navigateToProject(
                 context: context,
                 dataSource: data,
                 currentProject: data[index],
@@ -163,7 +162,7 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
     required int subHeight,
   }) {
     List<Widget> items = [];
-   
+
     for (int index = 0; index < data.length; index++) {
       items.add(
         Container(
@@ -180,7 +179,6 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
                 currentProject: data[index],
                 currentProjectIndex: index,
               );
-             
             },
           ),
         ),
@@ -191,6 +189,4 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
     }
     return items;
   }
-
- 
 }

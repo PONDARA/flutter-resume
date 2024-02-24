@@ -1,11 +1,11 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/pages/home/home_page.dart';
-import 'package:aerium/presentation/pages/widgets/socials.dart';
-import 'package:aerium/presentation/widgets/app_logo.dart';
-import 'package:aerium/presentation/widgets/nav_item.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/layout/adaptive.dart';
+import '../pages/home/home_page.dart';
+import '../pages/widgets/socials.dart';
+import 'app_logo.dart';
+import 'nav_item.dart';
+import 'page_wrapper.dart';
+import 'spaces.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 

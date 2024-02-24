@@ -1,10 +1,11 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/content_area.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../../../../core/layout/adaptive.dart';
+import '../../../../values/values.dart';
+import '../../../widgets/animated_text_slide_box_transition.dart';
+import '../../../widgets/content_area.dart';
+import '../../../widgets/spaces.dart';
 
 class AboutHeader extends StatelessWidget {
   const AboutHeader({
@@ -75,8 +76,10 @@ class AboutHeader extends StatelessWidget {
                     minWidth: imageWidthLg,
                     maxHeight: assignHeight(context, 0.55),
                   ),
-                  child: Image.asset(ImagePath.DEV,
-                    fit: BoxFit.cover,),
+                  child: Image.asset(
+                    ImagePath.DEV,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ],
@@ -124,7 +127,6 @@ class AboutDescription extends StatelessWidget {
           heightFactor: 2,
           textStyle: style,
         ),
-
         SpaceH8(),
         AnimatedTextSlideBoxTransition(
           controller: controller,

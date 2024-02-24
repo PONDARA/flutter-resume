@@ -1,16 +1,16 @@
-import 'package:aerium/core/utils/extensions.dart';
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/infrastructure/bloc/email_bloc.dart';
-import 'package:aerium/presentation/pages/widgets/simple_footer.dart';
-import 'package:aerium/presentation/widgets/aerium_button.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/aerium_text_form_field.dart';
-import 'package:aerium/presentation/widgets/content_area.dart';
-import 'package:aerium/presentation/widgets/custom_spacer.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/utils/extensions.dart';
+import '../../core/layout/adaptive.dart';
+import '../../infrastructure/bloc/email_bloc.dart';
+import 'widgets/simple_footer.dart';
+import '../widgets/aerium_button.dart';
+import '../widgets/animated_positioned_text.dart';
+import '../widgets/animated_text_slide_box_transition.dart';
+import '../widgets/aerium_text_form_field.dart';
+import '../widgets/content_area.dart';
+import '../widgets/custom_spacer.dart';
+import '../widgets/page_wrapper.dart';
+import '../widgets/spaces.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -85,7 +85,7 @@ class _ContactPageState extends State<ContactPage>
         ),
       );
     } else {
-      isNameValid( _nameController.text);
+      isNameValid(_nameController.text);
       isEmailValid(_emailController.text);
       isSubjectValid(_subjectController.text);
       isMessageValid(_messageController.text);

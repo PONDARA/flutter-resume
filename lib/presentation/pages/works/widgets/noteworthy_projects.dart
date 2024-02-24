@@ -1,10 +1,10 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/animated_line_through_text.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import '../../../../core/layout/adaptive.dart';
+import '../../../../core/utils/functions.dart';
+import '../../../widgets/animated_line_through_text.dart';
+import '../../../widgets/animated_positioned_text.dart';
+import '../../../widgets/animated_text_slide_box_transition.dart';
+import '../../../widgets/spaces.dart';
+import '../../../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 

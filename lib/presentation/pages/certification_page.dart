@@ -1,12 +1,12 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/pages/widgets/page_header.dart';
-import 'package:aerium/presentation/pages/widgets/simple_footer.dart';
-import 'package:aerium/presentation/widgets/certification_card.dart';
-import 'package:aerium/presentation/widgets/content_area.dart';
-import 'package:aerium/presentation/widgets/custom_spacer.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/values/values.dart';
+import '../../core/layout/adaptive.dart';
+import '../../core/utils/functions.dart';
+import 'widgets/page_header.dart';
+import 'widgets/simple_footer.dart';
+import '../widgets/certification_card.dart';
+import '../widgets/content_area.dart';
+import '../widgets/custom_spacer.dart';
+import '../widgets/page_wrapper.dart';
+import '../../values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
@@ -125,7 +125,6 @@ class _CertificationPageState extends State<CertificationPage>
       ),
     );
   }
-
 
   List<Widget> _certificateList({
     required List<CertificationData> data,

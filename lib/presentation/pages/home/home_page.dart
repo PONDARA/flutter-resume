@@ -1,18 +1,18 @@
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/pages/home/widgets/home_page_header.dart';
-import 'package:aerium/presentation/pages/home/widgets/loading_page.dart';
-import 'package:aerium/presentation/pages/widgets/animated_footer.dart';
-import 'package:aerium/presentation/pages/works/works_page.dart';
-import 'package:aerium/presentation/widgets/animated_positioned_text.dart';
-import 'package:aerium/presentation/widgets/animated_slide_transtion.dart';
-import 'package:aerium/presentation/widgets/animated_text_slide_box_transition.dart';
-import 'package:aerium/presentation/widgets/custom_spacer.dart';
-import 'package:aerium/presentation/widgets/page_wrapper.dart';
-import 'package:aerium/presentation/widgets/project_item.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
+import '../../../core/layout/adaptive.dart';
+import '../../../core/utils/functions.dart';
+import 'widgets/home_page_header.dart';
+import 'widgets/loading_page.dart';
+import '../widgets/animated_footer.dart';
+import '../works/works_page.dart';
+import '../../widgets/animated_positioned_text.dart';
+import '../../widgets/animated_slide_transtion.dart';
+import '../../widgets/animated_text_slide_box_transition.dart';
+import '../../widgets/custom_spacer.dart';
+import '../../widgets/page_wrapper.dart';
+import '../../widgets/project_item.dart';
+import '../../widgets/spaces.dart';
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+import '../../../values/values.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       vsync: this,
       duration: Animations.slideAnimationDurationLong,
     );
-   
+
     super.initState();
   }
 
@@ -117,7 +117,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           parent: AlwaysScrollableScrollPhysics(),
         ),
         children: [
-          
           HomePageHeader(
             controller: _slideTextController,
             scrollToWorksKey: key,
